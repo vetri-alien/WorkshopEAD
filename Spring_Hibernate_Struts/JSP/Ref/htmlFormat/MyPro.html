@@ -1,0 +1,40 @@
+<html>
+<body text=red bgcolor=lightblue>
+<font face="Times New Roman" size=20 color=green>
+<marquee behavior=alternate> SSI LIMITED </marquee>
+</font>
+<form method=post name=form1>
+<table border=0>
+<tr>
+<td><b>Sex</b> </td>
+<td><input type=radio name=r1><b>Male</b> </td>
+<td><input type=radio name=r1><b>Female</b> </td></b>
+</tr>
+<tr><td><b>City</b></td><td><input type=text name=city></td></tr>
+<tr><td><b>State</b></td><td><input type=text name=state></td></tr>
+<tr><td><b>Country</b></td></tr>
+<tr>
+<td><select name=list size=5 onblur=myselect()>
+<b>
+<option selected> India
+<option> Australia
+<option> Pakistan
+<option> SriLanka
+<option> England
+<option> NewZealand
+<option> SouthAfrica
+<option> WestIndies
+<option> Zimbabwe
+<option> USA
+</b>
+</select></td>
+</tr>
+<script language="javascript">
+function myselect()
+  {
+     city.value=list.selectedIndex;
+  }
+</script> 
+</body>
+</html>
+

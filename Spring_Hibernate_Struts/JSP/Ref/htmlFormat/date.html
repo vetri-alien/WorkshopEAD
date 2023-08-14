@@ -1,0 +1,18 @@
+<html>
+<head> <title> Date Function </title> </head>
+<body>
+<form name=f1>
+<input type=button name=b1 value=Click onclick=fun()>
+</form>
+<script language="javascript">
+function fun()
+{
+var today=new Date();
+var day=today.getDay();
+document.write(day+"<br>");
+document.writeln(today.getDate()+"/"+(today.getMonth()+1)+"/"+today.getYear()+"<br>");
+document.writeln(today.getHours()+":"+today.getMinutes()+":"+today.getSeconds()+"<br>");
+}
+</script>
+</body>
+</html>

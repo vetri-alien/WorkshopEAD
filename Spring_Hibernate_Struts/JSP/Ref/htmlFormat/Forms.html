@@ -1,0 +1,29 @@
+<html>
+<body>
+<form name=form method=post>
+<input type=checkbox name=t1 value=Oracle onclick=MyCheck(this.form)>ORACLE
+<input type=checkbox name=t1  value=Java onclick=MyCheck(this.form)>JAVA
+</form>
+<form method=post name=form>
+<input type=checkbox name=t1 value=MSc onclick=MyCheck(this.form)>MSc
+<input type=checkbox name=t2  value=MCA onclick=MyCheck(this.form)>MCA
+</form>
+<script language=javascript>
+function MyCheck(form) 
+  {
+      if(document.form[0].elements[0].checked && document.form[0].elements[1].checked)
+         alert(document.form[0].elements[0].value+","+ document.form[0].elements[1].value);
+      else if(document.form[0].elements[0].checked)
+ 	alert(document.form[0].elements[0].value);
+      else if(document.form[0].elements[1].checked)
+ 	alert(document.form[0].elements[1].value);
+      if(document.form[1].t1.checked && document.form[1].t2.checked)
+         alert(document.form[1].t1.value+","+ document.form[1].t2.value);
+
+  }
+</script>
+</body>
+</html>
+
+     
+  

@@ -1,0 +1,93 @@
+        JSP-Java Server Pages(Extension of servlets.)
+
+DHTML in Server side  with .jsp extension.
+It is  embedded into entirely in an Html page.
+It separates its contents from its presentation.
+It mainly focuses on presentation(View).
+It is first time compiled into servlet.
+Next JSP engine(container) executes jsp program.
+
+States of JSP program
+1 Translation state (Compilation state).
+	JSP program is generated as servlet and compiled as class file.
+2 Request time(Run time).
+	It receives the request from client and response to the appropriate client.
+
+JSP Elements:-
+	They're like html elements to implement java code in a jsp file.
+syntax of JSP element:-
+<%	%>
+Their are 5 types of JSP Elements:-
+1) Directive Tag		->	<%@		%>
+2) Declaration Tag		->	<%!		%>
+3) Scriptlet Tag		->	<%		%>
+4) Expression Tag		->	<%=		%>
+5) Comment Tag		->	<%--		--%>
+
+
+I) Directives
+	They are jsp elements,they give global information about an entire jsp page.
+Syntax to declare a directive:-
+ <%@dirname attributename="value" ... %>
+
+
+Types
+1. Page directive
+	-To include language ,set session state,set flush state, import package and so on.
+<%@page language="java(or)xml"
+	import="pkgs"
+	extends="baseclsname"
+	autoFlush="true/false"
+	session="true/false"
+	isErrorPage="false/true"
+	errorPage="urlpath of page"
+	contentType=""
+%>
+
+language : Which language we are going to use.
+extends - To extend base class. (default base class is javax.servlet.jsp.HttpJspBase)
+import - To import java packages.
+session - set session state.It must either be true or false,default is true.Whether session is available in our page.
+autoFlush - Whether an o/p buffer is automatically flushed or not.Default size is 8kb.
+isErrorPage - Whether errorpage is available or not.
+errorPage	- To set url path of error page.
+
+2. Include directive
+	-To include static resource or dynamic resource during the translation time.
+<%@include file="URL path" %>
+
+3.Taglib directive.
+	- To use custom tags.
+<%@taglib tagdir="directory of tagfiles" uri="URIname" prefix="" %>
+
+Scripting Elements:-
+
+<%!	%>		-> declaration 
+	To declare variables and methods during translation time.
+
+<%	%>		-> Scriplets 
+	To embed valid java executable statements.
+
+<%=	%>		-> Expresssion 
+	To insert a value during request time.It is converted into a string.
+
+<%--	--%>		-> JSP Comment Tag
+	Statements with in this tag will be ignored by Server.
+
+Life Cycle of JSP
+_jspInit()
+_jspService()
+_jspDestroy()
+
+Implicit Objects
+
+1) response-It encapsulates HttpServletResponse
+
+2) request-It encapsulates HttpServletRequest
+
+3) out - Encapsulates javax.servlet.jsp.JspWriter.
+	Writes an message on client.
+
+4) session - To handle session tracking in our jsp page.
+	It is an object of HttpSession
+

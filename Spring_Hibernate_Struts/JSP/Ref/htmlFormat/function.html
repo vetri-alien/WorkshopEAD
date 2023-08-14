@@ -1,0 +1,26 @@
+<html>
+<body>
+<table border=0>
+<tr>
+<td>Enter a No:</td>
+<td><input  type=text name=t1> </td>
+</tr>
+<tr>
+<td>Result:</td>
+<td><input type=text name=t2></td>
+</tr>
+<tr>
+<td><input type=button name=b1 value="Click" onclick=(t2.value=factorial(t1.value))> </td>
+</tr>
+
+<script>
+function factorial(n)
+  {
+      var fact=1;
+      for(i=1;i<= n;i++)
+         fact=fact*i;
+      return fact;
+  }
+</script>
+</body>
+</html>	

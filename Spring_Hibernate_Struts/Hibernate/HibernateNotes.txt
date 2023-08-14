@@ -1,0 +1,14 @@
+Definition:-
+	Hibernate is an Object-Relational  Mapping(ORM) solution for JAVA.  		It is  an open source persistent framework created by Gavin King in 2001.
+	It is a powerful, high performance Object-Relational Persistence and Query service for any Java Application.
+	Hibernate  maps  Java  classes  to  database  tables  and  from  Java  data  types  to  SQL  data types  and  relieves  the  developer  from  95%  of  common  data  persistence  related programming tasks.
+	Hibernate sits between traditional Java objects and database server to handle all the works in persisting those objects based on the appropriate O/R mechanisms and patterns.
+
+Hibernate Advantages
+	1) Hibernate  takes  care  of  mapping Java  classes  to  database  tables  using  XML  files and without writing any line of code.
+	2) Provides  simple  APIs  for  storing  and  retrieving  Java  objects  directly  to  and  from the database.
+	3) If there is change in the  database or in any table,  then  you need to change the  XML file properties only.
+	4) Hibernate does not require an application server to operate.
+	5) Manipulates Complex associations of objects of your database.
+	6) Minimizes database access with smart fetching strategies.
+	7) Provides simple querying of data.

@@ -1,0 +1,14 @@
+SMAP
+textprocess_jsp_jsp.java
+JSP
+*S JSP
+*F
++ 0 textprocess.jsp.jsp
+textprocess.jsp.jsp
+*L
+5,14:61
+19,5:13
+23,2:75
+25,13:78
+37,4:91
+*E

@@ -1,0 +1,27 @@
+<html>
+<body bgcolor=gray text=magenta>
+<center>
+<form method=post action="E:\Cintralla\jsp\MyPro.html">
+<table border=0>
+<tr>
+<td><b>User Name</b></td>
+<td><input type=text name=uname></td>
+</tr>
+<tr>
+<td><b>PassWord</b></td>
+<td><input type=password name=pwd></td>
+</tr>
+<tr>
+<td><input type=submit value="Submit" name=s1 on submit=checking(this.form)></td>
+</tr>
+</form>
+</center>
+<script>
+function checking(form)
+  {
+      if(form.uname.value=="sasikumar" && form.pwd.value="srivijay")
+         form.submit();
+  }
+</script>    	
+</body>
+</html>

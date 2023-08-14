@@ -1,0 +1,39 @@
+<html>
+<body>
+<form method=post>
+Enter a No:<input type=text name=t1 value=0>
+<p>
+Click on ur Choice:
+<input type=radio name=list value=1 onclick="check(this.form);">Round
+<br>
+<input type=radio name=list value=2
+onclick="check(this.form);">Ceil
+<br>
+<input type=radio name=list value=3
+onclick="check(this.form);">Floor
+</form>
+</p>
+<script>
+function check(form)
+  {
+     if(form.list[0].checked)
+       {
+	var n=form.t1.value;
+	parent.parent.middle.output.document.forms[0].result1.value=Math.round(n);
+       }
+    else if(form.list[1].checked)
+       {
+	var n=form.input.value;
+	parent.parent.middle.output.document.forms[0].result1.value=Math.ceil(n);
+       }
+     else if(form.list[2].checked)
+       {
+	var n=form.input.value;
+	parent.parent.middle.output.document.forms[0].result1.value=Math.floor(n);
+       }
+  }
+</script>
+</body>
+<html>
+       
+			

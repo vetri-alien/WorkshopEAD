@@ -1,0 +1,6 @@
+The jsp:useBean tag creates a JavaBeans component by instantiating the AccountBean class, names the component accountBean, and indicates that the component will be available for the current HTTP session. Unlike the other JSP tags, the jsp:useBean tag is executed just once during the session.
+
+<jsp:useBean id="accountBean" scope="session" class="AccountBean" />
+
+The jsp:setProperty tag sets all of the property values in the accountBean to the parameters passed by the HTML form. 
+

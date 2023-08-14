@@ -1,0 +1,14 @@
+SMAP
+inbox_jsp.java
+JSP
+*S JSP
+*F
++ 0 inbox.jsp
+inbox.jsp
+*L
+5,13:56
+18,2:11
+19,2:69
+21,3:72
+23,100:75
+*E

@@ -1,0 +1,20 @@
+<html>
+<head>
+<script>
+var m1;
+function msWindow()
+  {
+      m1=open("parent.html","Sri","height=300,width=300,resizable=yes,toolbar=yes,menubar=yes,status=yes,scrollbars=yes");
+  }
+function myClose()
+  {
+      m1.close();
+  }
+</script>
+</head>
+<body>
+<form name=f1 method=post>
+<input type=button name=b1 value="My Window" onclick="msWindow();">
+<input type=button name=b2 value="Close Window" onclick="myClose();">
+</body>
+</html>

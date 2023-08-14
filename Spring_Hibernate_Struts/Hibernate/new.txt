@@ -1,0 +1,11 @@
+
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;    
+
+
+Configuration cfg = new Configuration();
+cfg.configure("hibernate.cfg.xml");
+ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(cfg.getProperties()).build();        
+factory= = cfg.buildSessionFactory(serviceRegistry);

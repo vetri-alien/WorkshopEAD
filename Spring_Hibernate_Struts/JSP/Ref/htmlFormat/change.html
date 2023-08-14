@@ -1,0 +1,24 @@
+<html>
+<body>
+<input type=text name=t1 onblur=check()><br>
+<input type=text name=t2 onfocus=fun() ><br>
+<input type=text name=t3 onblur='t2.focus()'> <br>
+<script>
+function check()
+  {
+      if(t1.value>0)
+         t3.focus();
+      else
+        {
+           alert("Type Something");
+           t1.focus();
+        }
+  }
+function fun()
+  {
+       alert("U are in Text3");
+       t3.select();	
+  }
+</script>
+</body>
+</html>

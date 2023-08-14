@@ -1,0 +1,26 @@
+<%
+if(session.getValue("uname")==null || session.getValue("upass")==null)
+response.sendRedirect("maillogin.jsp");
+%>
+<html>
+<title>
+Mail Account
+</title>
+<body background="bgpic25.jpg">
+&nbsp;
+<p align="left"><font face="Arial" size="6" color="darkblue">
+<marquee behavior="alternate" bgcolor="#FF9999" scrollamount="130" scrolldelay="100">WelCome
+To Grain Tech Mail Account</marquee>
+<br><br>
+</font>
+<font face="Arial" size="4">
+<a href="Inbox.jsp">Inbox </a><br><br>
+<a href="Compose.jsp">Compose</a><br><br>
+<a href="AddressBook.jsp">Adress Book</a><br><br>
+<a href="Signout.jsp">Signout</a><br><br>
+<a href="clientmails.jsp">Client Mails</a>
+</font>
+</p>
+</body>
+</html>
+

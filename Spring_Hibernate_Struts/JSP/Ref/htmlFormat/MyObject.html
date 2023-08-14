@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+var name,book_id,author;
+function Books(name,book_id,author)
+  {
+      this.name=name;
+      this.book_id=book_id;
+      this.author=author;
+  } 
+</script>
+</head>
+<body>
+<form method=post>
+<input type=button name=t1 value="Click" onclick=MyCons()>
+<script>
+function MyCons()
+  {
+  var book1=new Books("Java",1001,"Gostling");
+  document.writeln(book1.name);
+  document.writeln(book1.book_id);
+  document.writeln(book1.author);
+  }
+</script>  
+
