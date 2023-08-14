@@ -44,7 +44,7 @@
             e1.setSalary(10000);
             sess.update(e1);
             tx.commit();
-            out.println("Record Updates");
+            out.println("Record Updated");
             }
             else{
                 out.println("No Record Found");
